@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { FaGithub, FaLinkedin, FaEnvelope, FaPhoneAlt, FaMapMarkerAlt, FaProjectDiagram, FaCode, FaDraftingCompass, FaLaptopCode, FaRobot, FaCloud, FaPlug } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope, FaPhoneAlt, FaMapMarkerAlt, FaCode, FaRobot, FaCloud, FaPlug } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -24,7 +24,7 @@ export default function Home() {
           {/* Right: Profile Image */}
           <div className="flex-1 flex justify-center md:justify-end mt-12 md:mt-0 relative z-10">
             <div className="relative inline-block">
-              <img src="/profile.jpeg" alt="Profile" className="w-56 h-56 md:w-64 md:h-64 rounded-full border-8 border-white shadow-xl object-cover" />
+              <Image src="/profile.jpeg" alt="Profile" width={256} height={256} className="w-56 h-56 md:w-64 md:h-64 rounded-full border-8 border-white shadow-xl object-cover" />
               {/* Dev Badge */}
               <span className="absolute -top-4 -right-4 bg-gradient-to-r from-[#0f2027] to-[#00c6ff] text-white font-bold px-6 py-2 rounded-full text-lg shadow-lg">Dev</span>
             </div>
@@ -41,8 +41,8 @@ export default function Home() {
           <div className="flex-1">
             <h2 className="text-4xl md:text-5xl font-extrabold mb-8 text-cyan-400">About Me</h2>
             <div className="space-y-6 text-gray-300 text-lg">
-              <p>I'm a Senior Full Stack Developer and Tech Lead with over 9 years of experience in designing and building modern web applications. I specialize in the MERN stack, Next.js, NestJS, and cloud deployment on AWS, with hands-on expertise in AI chatbots, microservices, and enterprise integrations.</p>
-              <p>I've led high-performing teams, optimized large-scale systems, and built solutions integrated with platforms like Salesforce, LMSs, and ITSM tools. I'm passionate about clean architecture, performance optimization, and leveraging AI to solve real-world problems. Currently, I'm focused on building scalable, secure, and intelligent applications for remote-first teams.</p>
+              <p>I&apos;m a Senior Full Stack Developer and Tech Lead with over 9 years of experience in designing and building modern web applications. I specialize in the MERN stack, Next.js, NestJS, and cloud deployment on AWS, with hands-on expertise in AI chatbots, microservices, and enterprise integrations.</p>
+              <p>I&apos;ve led high-performing teams, optimized large-scale systems, and built solutions integrated with platforms like Salesforce, LMSs, and ITSM tools. I&apos;m passionate about clean architecture, performance optimization, and leveraging AI to solve real-world problems. Currently, I&apos;m focused on building scalable, secure, and intelligent applications for remote-first teams.</p>
               <p>I thrive on staying at the forefront of technology, continuously learning, and delivering impactful solutions that drive business success. My goal is to empower teams and clients with robust, future-ready digital products.</p>
             </div>
             <div className="mt-10">
@@ -57,7 +57,7 @@ export default function Home() {
           {/* Right: Profile Image */}
           <div className="flex-1 flex justify-center md:justify-end">
             <div className="bg-card rounded-2xl overflow-hidden shadow-lg w-80 h-96 flex items-center justify-center">
-              <img src="/about.webp" alt="Profile" className="object-cover w-full h-full" />
+              <Image src="/about.webp" alt="Profile" width={320} height={384} className="object-cover w-full h-full" />
             </div>
           </div>
         </div>
@@ -232,7 +232,7 @@ export default function Home() {
             {/* Project 1: AI Chatbot & VoiceBot Platform */}
             <div className="bg-[#232b3a] text-gray-200 rounded-2xl shadow-lg overflow-hidden flex flex-col">
               <div className="relative h-48 w-full">
-                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="AI Chatbot & VoiceBot Platform" className="object-cover w-full h-full" />
+                <Image src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="AI Chatbot & VoiceBot Platform" width={400} height={192} className="object-cover w-full h-full" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#232b3a] via-transparent to-transparent opacity-80"></div>
               </div>
               <div className="p-6 flex-1 flex flex-col">
@@ -252,7 +252,7 @@ export default function Home() {
             {/* Project 2: OneStop Student Helpdesk System */}
             <div className="bg-[#232b3a] text-gray-200 rounded-2xl shadow-lg overflow-hidden flex flex-col">
               <div className="relative h-48 w-full">
-                <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6" alt="OneStop Student Helpdesk System" className="object-cover w-full h-full" />
+                <Image src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6" alt="OneStop Student Helpdesk System" width={400} height={192} className="object-cover w-full h-full" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#232b3a] via-transparent to-transparent opacity-80"></div>
               </div>
               <div className="p-6 flex-1 flex flex-col">
@@ -272,7 +272,7 @@ export default function Home() {
             {/* Project 3: Live Streaming & Chat Application */}
             <div className="bg-[#232b3a] text-gray-200 rounded-2xl shadow-lg overflow-hidden flex flex-col">
               <div className="relative h-48 w-full">
-                <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca" alt="Live Streaming & Chat Application" className="object-cover w-full h-full" />
+                <Image src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca" alt="Live Streaming & Chat Application" width={400} height={192} className="object-cover w-full h-full" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#232b3a] via-transparent to-transparent opacity-80"></div>
               </div>
               <div className="p-6 flex-1 flex flex-col">
@@ -298,12 +298,12 @@ export default function Home() {
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-2 bg-gradient-to-r from-[#0f2027] to-[#00c6ff] text-transparent bg-clip-text">Get In Touch</h2>
           <div className="w-24 h-1 mx-auto mb-6 bg-gradient-to-r from-[#0f2027] via-[#2c5364] to-[#00c6ff] rounded-full"></div>
-          <p className="text-center text-gray-300 mb-10 max-w-2xl mx-auto">Ready to work together? I'd love to hear about your project and discuss how we can bring your ideas to life.</p>
+          <p className="text-center text-gray-300 mb-10 max-w-2xl mx-auto">Ready to work together? I&apos;d love to hear about your project and discuss how we can bring your ideas to life.</p>
           <div className="flex flex-col lg:flex-row gap-8 max-w-4xl mx-auto">
             {/* Left: Contact Info */}
             <div className="flex-1 bg-[#232b3a] rounded-2xl p-8 shadow-lg flex flex-col justify-between mb-4 lg:mb-0">
               <div>
-                <h3 className="text-xl font-bold text-white mb-6">Let's Connect</h3>
+                <h3 className="text-xl font-bold text-white mb-6">Let&apos;s Connect</h3>
                 <div className="space-y-4 mb-8">
                   <div className="flex items-center gap-4">
                     <span className="bg-gradient-to-br from-[#0f2027] to-[#00c6ff] p-3 rounded-lg text-white text-xl"><FaEnvelope /></span>
@@ -364,7 +364,7 @@ export default function Home() {
             <h3 className="text-xl font-bold text-white mb-2">Portfolio</h3>
             <p className="text-gray-300 mb-2">Full Stack Developer with 9+ years of experience in MERN stack, Next.js, AI chatbots, and cloud-native deployments.</p>
             <p className="text-gray-400 mb-2">Passionate about building scalable, high-performance web solutions.</p>
-            <p className="text-gray-400 mb-4">Let's create something impactful together.</p>
+            <p className="text-gray-400 mb-4">Let&apos;s create something impactful together.</p>
             <div className="flex gap-4 mt-2">
               <a href="https://www.linkedin.com/in/basantkumar2/" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-[#0f2027] to-[#00c6ff] p-2 rounded-full text-white text-lg flex items-center justify-center shadow hover:opacity-80 transition">
                 <FaLinkedin />
