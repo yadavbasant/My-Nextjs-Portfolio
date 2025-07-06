@@ -23,7 +23,14 @@ export default function ScreenshotsModal({ open, onClose, images }: ScreenshotsM
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {images.map((src, idx) => (
             <div key={idx} className="rounded-lg overflow-hidden bg-[#181f2a] flex items-center justify-center">
-              <Image src={src} alt={`Screenshot ${idx + 1}`} width={600} height={350} className="object-contain w-full h-[350px]" />
+              <Image 
+                src={src} 
+                alt={`Project Screenshot ${idx + 1}`} 
+                width={600} 
+                height={350} 
+                className="object-contain w-full h-[350px]"
+                loading="lazy"
+              />
             </div>
           ))}
         </div>

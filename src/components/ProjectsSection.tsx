@@ -94,7 +94,14 @@ export default function ProjectsSection() {
                 onClick={() => openScreenshots(idx)}
                 title="View Screenshots"
               >
-                <Image src={project.insightsImage} alt={project.title} width={400} height={192} className="object-cover w-full h-full group-hover:opacity-80 transition" />
+                <Image 
+                  src={project.insightsImage} 
+                  alt={`${project.title} - Project Screenshot`} 
+                  width={400} 
+                  height={192} 
+                  className="object-cover w-full h-full group-hover:opacity-80 transition"
+                  loading="lazy"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#232b3a] via-transparent to-transparent opacity-80"></div>
                 <div className="absolute bottom-2 right-2 bg-black/60 text-cyan-200 text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition">View Screenshots</div>
               </div>

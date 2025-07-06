@@ -1,0 +1,25 @@
+{
+  "name": "Basant Kumar - Senior Full Stack Developer",
+  "short_name": "Basant Portfolio",
+  "description": "Senior Full Stack Developer with 9+ years of experience in MERN stack, Next.js, AI chatbots, and cloud-native solutions.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#181f2a",
+  "theme_color": "#00c6ff",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["technology", "business", "productivity"],
+  "lang": "en",
+  "dir": "ltr"
+} 
