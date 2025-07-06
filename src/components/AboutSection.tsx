@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function AboutSection() {
   return (
-    <section id="about" className="w-full py-20">
+    <section id="about" className="w-full py-20 scroll-mt-20">
       <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center md:items-start gap-12">
         {/* Left: Text Content */}
         <div className="flex-1">

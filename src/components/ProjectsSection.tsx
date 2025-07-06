@@ -81,7 +81,7 @@ export default function ProjectsSection() {
   };
 
   return (
-    <section id="projects" className="w-full py-20">
+    <section id="projects" className="w-full py-20 scroll-mt-20">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-2 bg-gradient-to-r from-[#0f2027] to-[#00c6ff] text-transparent bg-clip-text">Featured Projects</h2>
         <div className="w-24 h-1 mx-auto mb-6 bg-gradient-to-r from-[#0f2027] via-[#2c5364] to-[#00c6ff] rounded-full"></div>

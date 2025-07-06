@@ -2,7 +2,7 @@ import { FaCode, FaRobot, FaCloud, FaPlug } from "react-icons/fa";
 
 export default function ServicesSection() {
   return (
-    <section id="services" className="w-full py-20 bg-gradient-to-br from-[#232b3a] via-[#232b3a] to-[#181f2a]">
+    <section id="services" className="w-full py-20 bg-gradient-to-br from-[#232b3a] via-[#232b3a] to-[#181f2a] scroll-mt-20">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-4 bg-gradient-to-r from-[#0f2027] to-[#00c6ff] text-transparent bg-clip-text">Services I Provide</h2>
         <p className="text-center text-lg text-gray-300 mb-12 max-w-3xl mx-auto">From scalable web apps to intelligent automation, I offer full-cycle development services tailored for modern businesses.</p>

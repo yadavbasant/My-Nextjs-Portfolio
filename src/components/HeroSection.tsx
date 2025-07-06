@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function HeroSection() {
   return (
-    <section id="home" className="w-full bg-gradient-to-br from-[#0f2027] via-[#2c5364] to-[#00c6ff] py-20">
+    <section id="home" className="w-full bg-gradient-to-br from-[#0f2027] via-[#2c5364] to-[#00c6ff] py-20 scroll-mt-20">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between px-4">
         {/* Left: Text Content */}
         <div className="flex-1 flex flex-col justify-center z-10 max-w-2xl">
