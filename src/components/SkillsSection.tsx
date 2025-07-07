@@ -1,6 +1,6 @@
 export default function SkillsSection() {
   return (
-    <section id="skills" className="w-full py-20">
+    <section id="skills" className="w-full py-20 scroll-mt-20">
       <div className="max-w-6xl mx-auto px-4">
         <div className="relative flex flex-col items-center mb-0">
           <div className="bg-[#232b3a] text-gray-200 border-2 border-cyan-400 rounded-lg px-8 py-2 text-2xl md:text-3xl font-extrabold text-center text-cyan-300 shadow mb-0 z-10">MY SKILLS</div>

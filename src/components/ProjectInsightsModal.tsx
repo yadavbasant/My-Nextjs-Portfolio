@@ -28,7 +28,14 @@ export default function ProjectInsightsModal({ open, onClose, image, details }: 
           &times;
         </button>
         <div className="flex-shrink-0 flex items-center justify-center">
-          <Image src={image} alt={details.title} width={220} height={220} className="rounded-xl object-cover shadow-lg" />
+          <Image 
+            src={image} 
+            alt={`${details.title} - Project Overview`} 
+            width={220} 
+            height={220} 
+            className="rounded-xl object-cover shadow-lg"
+            loading="lazy"
+          />
         </div>
         <div className="flex-1 min-w-0">
           <h2 className="text-2xl font-bold mb-2 text-cyan-400 flex items-center gap-2">💡 {details.title}</h2>

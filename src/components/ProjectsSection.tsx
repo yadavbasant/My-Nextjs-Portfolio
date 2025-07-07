@@ -81,7 +81,7 @@ export default function ProjectsSection() {
   };
 
   return (
-    <section id="projects" className="w-full py-20">
+    <section id="projects" className="w-full py-20 scroll-mt-20">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-2 bg-gradient-to-r from-[#0f2027] to-[#00c6ff] text-transparent bg-clip-text">Featured Projects</h2>
         <div className="w-24 h-1 mx-auto mb-6 bg-gradient-to-r from-[#0f2027] via-[#2c5364] to-[#00c6ff] rounded-full"></div>
@@ -94,7 +94,14 @@ export default function ProjectsSection() {
                 onClick={() => openScreenshots(idx)}
                 title="View Screenshots"
               >
-                <Image src={project.insightsImage} alt={project.title} width={400} height={192} className="object-cover w-full h-full group-hover:opacity-80 transition" />
+                <Image 
+                  src={project.insightsImage} 
+                  alt={`${project.title} - Project Screenshot`} 
+                  width={400} 
+                  height={192} 
+                  className="object-cover w-full h-full group-hover:opacity-80 transition"
+                  loading="lazy"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#232b3a] via-transparent to-transparent opacity-80"></div>
                 <div className="absolute bottom-2 right-2 bg-black/60 text-cyan-200 text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition">View Screenshots</div>
               </div>
