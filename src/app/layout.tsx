@@ -60,9 +60,9 @@ export const metadata: Metadata = {
     siteName: 'Basant Kumar Portfolio',
     images: [
       {
-        url: '/og-image.jpg', // You'll need to add this image
-        width: 1200,
-        height: 630,
+        url: '/profile.jpeg', // Using existing profile image
+        width: 256,
+        height: 256,
         alt: 'Basant Kumar - Senior Full Stack Developer',
       },
     ],
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Basant Kumar - Senior Full Stack Developer | MERN Stack & AI Solutions',
     description: 'Senior Full Stack Developer with 9+ years of experience in MERN stack, Next.js, AI chatbots, and cloud-native solutions.',
-    images: ['/og-image.jpg'], // Same as OpenGraph image
+    images: ['/profile.jpeg'], // Same as OpenGraph image
     creator: '@yourtwitterhandle', // Replace with your Twitter handle
   },
   robots: {
@@ -84,11 +84,6 @@ export const metadata: Metadata = {
       'max-image-preview': 'large',
       'max-snippet': -1,
     },
-  },
-  verification: {
-    google: 'your-google-verification-code', // Replace with your Google Search Console verification code
-    // yandex: 'your-yandex-verification-code',
-    // yahoo: 'your-yahoo-verification-code',
   },
   category: 'technology',
 };
